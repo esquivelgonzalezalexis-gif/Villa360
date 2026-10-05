@@ -1,0 +1,6 @@
+print("--------------------")
+print("proyecto Villa360")
+print("--------------------")
+n=input("Ingresa tu nombre")
+print("hola",n)
+print("el entorno de trabajo esta listo")

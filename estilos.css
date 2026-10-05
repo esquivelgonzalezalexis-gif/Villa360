@@ -1,0 +1,474 @@
+/* ===== VILLA 360 ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#edc2b0;
+  color:#333;
+}
+
+/* ---------- LOGIN ---------- */
+.login{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:
+  linear-gradient(rgba(20,30,60,.45),rgba(20,30,60,.45)),
+  url("Imagenes/Fondo maz.jpeg");
+  background-size:cover;
+  background-position:center;
+}
+
+.login-box{
+  width:420px;
+  background:#e9bebeef;
+  padding:35px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+
+.login-box h1{
+  font-size:42px;
+  color:#6A1B9A;
+  margin-bottom:8px;
+}
+
+.login-box p{
+  color:#555;
+  margin-bottom:18px;
+}
+
+.login-box input{
+  width:100%;
+  padding:13px;
+  margin:10px 0;
+  border:1px solid #f4f1f1;
+  border-radius:12px;
+}
+
+.login-box button{
+  width:100%;
+  padding:13px;
+  border:none;
+  border-radius:12px;
+  background:#8E44AD;
+  color:rgb(245, 243, 243);
+  font-size:17px;
+  cursor:pointer;
+}
+
+.login-box a{
+  display:block;
+  margin-top:15px;
+  color:#8E44AD;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* ===== ENCABEZADO ===== */
+
+header{
+    background:url("Imagenes/cintas maz.jpeg");
+    background-size:cover;
+    background-position:center;
+    height:95px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 25px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:white;
+    padding:3px;
+}
+
+.logo h2{
+    color:#0a0707;
+    font-size:28px;
+    margin:0;
+}
+
+.logo p{
+    color:#060504;
+    font-size:13px;
+    margin:0;
+}
+
+.regresar{
+    background:#8E44AD;
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.regresar:hover{
+    background:#6A1B9A;
+}
+
+/* ---------- CONTENIDO ---------- */
+.contenedor{
+  width:92%;
+  max-width:1200px;
+  margin:30px auto;
+}
+
+.hero{
+  height:380px;
+  border-radius:22px;
+  display:flex;
+  align-items:center;
+  padding:45px;
+  color:#eceeec;
+  background:
+  linear-gradient(rgba(20,30,60,.35),rgba(20,30,60,.35)),
+  url("Imagenes/Fondo2.jpeg");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero h1{
+  font-size:50px;
+}
+
+.hero p{
+  font-size:20px;
+  max-width:520px;
+  margin-top:10px;
+}
+
+/* ---------- TARJETAS ---------- */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:22px;
+  margin-top:30px;
+}
+
+.card{
+  background:rgb(192, 149, 149);
+  border-radius:18px;
+  padding:20px;
+  text-align:center;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.card img{
+  width:100%;
+  height:170px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+
+.card h3{
+  color:#6A1B9A;
+  margin-bottom:8px;
+}
+
+.card p{
+  font-size:14px;
+  line-height:1.5;
+}
+
+/* Colores */
+.rosa{background:#efb1d0;}
+.morado{background:#c289d7;}
+.verde{background:#81df81;}
+.amarillo{background:#f5e09d;}
+.azul{background:#a4dbf4;}
+.naranja{background:#db7c5f;}
+.rojo{background:#ea7490;}
+
+/* ---------- BOTONES ---------- */
+.boton{
+  display:inline-block;
+  margin-top:14px;
+  padding:10px 18px;
+  background:#8E44AD;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+.boton:hover{
+  background:#6A1B9A;
+}
+
+/* ---------- FORMULARIOS ---------- */
+.formulario{
+  width:100%;
+  max-width:650px;
+  margin:35px auto;
+  background:rgb(229, 210, 210);
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+
+.formulario h2{
+  text-align:center;
+  color:#6A1B9A;
+  margin-bottom:20px;
+}
+
+.formulario label{
+  display:block;
+  margin-top:12px;
+  font-weight:bold;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select{
+  width:100%;
+  padding:12px;
+  margin-top:6px;
+  border:1px solid #f1f3ef;
+  border-radius:10px;
+}
+
+.formulario textarea{
+  resize:vertical;
+}
+
+.botones{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:22px;
+}
+
+/* ---------- GASTRONOMÍA ---------- */
+.menu-gastro{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin:25px 0;
+  flex-wrap:wrap;
+}
+
+.menu-gastro button{
+  background:#8E44AD;
+  color:rgb(247, 240, 240);
+  border:none;
+  padding:12px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.oculto{
+  display:none;
+}
+
+/* ---------- PIE ---------- */
+footer{
+  background:#4A235A;
+  color:rgb(202, 151, 151);
+  text-align:center;
+  padding:18px;
+  margin-top:35px;
+}
+
+/* ---------- CELULAR ---------- */
+@media(max-width:768px){
+
+header{
+  flex-direction:column;
+  gap:10px;
+}
+
+.hero{
+  height:280px;
+  padding:25px;
+}
+
+.hero h1{
+  font-size:34px;
+}
+
+nav{
+  text-align:center;
+}
+
+}
+/* ===== ARTESANÍAS MAZAHUAS ===== */
+
+.menu-artesanias{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:25px 0;
+}
+
+.menu-artesanias button{
+  background:#8E44AD;
+  color:white;
+  border:none;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.menu-artesanias button:hover{
+  background:#6A1B9A;
+}
+
+
+/* ---------- SECCIONES DE ARTESANÍAS ---------- */
+
+.seccion-art{
+  display:block;
+}
+
+.oculto{
+  display:none;
+}
+
+
+/* ---------- CONTENEDOR DE CADA CATEGORÍA ---------- */
+
+.info-art{
+  background:#F7ECE7;
+  border-radius:18px;
+  padding:25px;
+  margin-top:20px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.info-art > h1{
+  color:#6A1B9A;
+  text-align:center;
+  margin-bottom:25px;
+}
+
+
+/* ---------- PRODUCTOS ---------- */
+
+.producto-art{
+  background:white;
+  border-radius:18px;
+  padding:22px;
+  margin-bottom:25px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,.10);
+}
+
+.producto-art:last-child{
+  margin-bottom:0;
+}
+
+.producto-art h2{
+  color:#6A1B9A;
+  margin-bottom:12px;
+}
+
+.producto-art p{
+  font-size:16px;
+  line-height:1.6;
+  margin-bottom:10px;
+}
+
+.producto-art b{
+  color:#6A1B9A;
+}
+
+
+/* ---------- IMAGEN DE CADA PRODUCTO ---------- */
+/* La imagen queda ABAJO de toda la información */
+
+.producto-art img{
+  width:100%;
+  max-width:400px;
+  height:250px;
+  object-fit:cover;
+  border-radius:15px;
+  display:block;
+  margin:20px auto 0;
+  box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+
+/* ---------- HISTORIA ---------- */
+
+.historia{
+  background:#F7ECE7;
+  margin:35px auto;
+  padding:30px;
+  border-radius:20px;
+  max-width:1100px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.historia h2{
+  color:#6A1B9A;
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.historia p{
+  text-align:justify;
+  line-height:1.8;
+  margin-bottom:15px;
+}
+
+.img-historia{
+  width:100%;
+  max-height:380px;
+  object-fit:cover;
+  border-radius:15px;
+  margin-top:10px;
+}
+
+
+/* ---------- CELULAR ---------- */
+
+@media(max-width:768px){
+
+  .menu-artesanias{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .menu-artesanias button{
+    width:90%;
+  }
+
+  .info-art{
+    padding:15px;
+  }
+
+  .producto-art{
+    padding:18px;
+  }
+
+  .producto-art img{
+    height:220px;
+  }
+
+}

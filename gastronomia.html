@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gastronomía | Villa 360</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="encabezado-img">
+
+  <div class="logo">
+    <img src="Imagenes/Logotipo mazahua.jpeg" class="logo-img">
+    <div>
+      <h2>Villa 360</h2>
+      <p>Cultura Mazahua</p>
+    </div>
+  </div>
+
+  <a href="inicio.html" class="regresar">← Regresar</a>
+
+</header>
+<section class="hero" style="background-image:url('Imagenes/Fondo gastronomia.jpeg')">
+  <div>
+    <h1>Gastronomía Mazahua</h1>
+    <p>Sabores tradicionales de Villa de Allende.</p>
+  </div>
+</section>
+
+<div class="contenedor">
+
+  <div class="menu-gastro">
+    <button onclick="mostrar('bebidas')">🥤 Bebidas</button>
+    <button onclick="mostrar('postres')">🍰 Postres</button>
+    <button onclick="mostrar('platillos')">🍲 Platillos</button>
+  </div>
+
+  <div id="bebidas" class="seccion">
+    <h2>Bebidas tradicionales</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/atole.jpg">
+        <h3>Atole de maíz</h3>
+        <p>Bebida caliente preparada con maíz y piloncillo.</p>
+      </div>
+      <div class="card">
+        <img src="img/aguamiel.jpg">
+        <h3>Aguamiel</h3>
+        <p>Bebida obtenida del maguey y consumida en la región.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+        <img src="img/atole.jpg">
+        <h3>Sende</h3>
+        <p>Bebida preparada a base de maiz fermentado.</p>
+      </div>
+
+  <div id="postres" class="seccion oculto">
+    <h2>Postres</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/pan.jpg">
+        <h3>Pan artesanal</h3>
+        <p>Pan tradicional elaborado en hornos de leña.</p>
+      </div>
+      <div class="card">
+        <img src="img/dulces.jpg">
+        <h3>Dulces típicos</h3>
+        <p>Dulces preparados con frutas y piloncillo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+        <img src="img/dulces.jpg">
+        <h3>Dulce de calaba</h3>
+        <p>Es uno de los productos de la milpa y puede utilizarse para preparar dulces tradicionales</p>
+      </div>
+
+  <div id="platillos" class="seccion oculto">
+    <h2>Platillos fuertes</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="img/barbacoa.jpg">
+        <h3>Barbacoa</h3>
+        <p>Uno de los platillos más representativos de Villa de Allende.</p>
+      </div>
+      <div class="card">
+        <img src="img/tamales.jpg">
+        <h3>Tamales</h3>
+        <p>Preparados con masa de maíz y diferentes rellenos.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

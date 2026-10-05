@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro | Villa 360</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body class="login">
+
+<div class="login-box">
+
+<h1>🦌 Villa 360</h1>
+<p>Registro de usuario</p>
+
+<form id="registroForm">
+
+<input type="text" id="usuario" placeholder="Usuario (admin)" required>
+
+<input type="password" id="clave" placeholder="Contraseña (12345678)" required>
+
+<button type="submit">Registrarse</button>
+
+</form>
+
+<p id="mensaje" style="color:#8B0000;margin-top:10px;"></p>
+
+<a href="index.html">← Regresar a iniciar sesión</a>
+
+</div>
+
+<script>
+document.getElementById("registroForm").addEventListener("submit",function(e){
+e.preventDefault();
+
+const usuario=document.getElementById("usuario").value.trim();
+const clave=document.getElementById("clave").value.trim();
+
+if(usuario!=="admin"){
+document.getElementById("mensaje").textContent="El usuario debe ser: admin";
+return;
+}
+
+if(clave!=="12345678"){
+document.getElementById("mensaje").textContent="La contraseña debe ser: 12345678";
+return;
+}
+
+alert("Registro exitoso. Ahora inicia sesión.");
+window.location.href="index.html";
+});
+</script>
+
+</body>
+</html>

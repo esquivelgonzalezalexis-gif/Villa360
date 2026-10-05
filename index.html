@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Villa 360</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body class="login">
+
+<div class="login-box">
+
+<h1>🦌 Villa 360</h1>
+<p>Cultura Mazahua de Villa de Allende</p>
+
+<form id="loginForm">
+  <input type="text" id="usuario" placeholder="Usuario" required>
+  <input type="password" id="clave" placeholder="Contraseña" required>
+
+  <button type="submit">Iniciar sesión</button>
+</form>
+
+<p id="mensaje" style="color:#8B0000;margin-top:10px;"></p>
+
+<a href="registro_login.html">¿No te has registrado?</a>
+
+</div>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit",function(e){
+e.preventDefault();
+
+const usuario=document.getElementById("usuario").value.trim();
+const clave=document.getElementById("clave").value.trim();
+
+if(usuario==="admin" && clave==="12345678"){
+window.location.href="inicio.html";
+}else{
+document.getElementById("mensaje").textContent="Usuario o contraseña incorrectos";
+document.getElementById("clave").value="";
+}
+});
+</script>
+
+</body>
+</html>
